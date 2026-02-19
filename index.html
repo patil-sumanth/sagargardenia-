@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Gardenia Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#" class="logo">Sagar <span>Gardenia</span></a>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle"></div>
+    </nav>
+</header>
+
+<!-- ====== HERO ====== -->
+<section id="home" class="hero">
+    <div class="hero-content container">
+        <h1>Welcome to <span>Sagar Gardenia</span></h1>
+        <p>Experience Top Class Dining near Nagarbhavi — Delicious, Fresh & Authentic!</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<!-- ====== ABOUT ====== -->
+<section id="about" class="about container">
+    <h2>About Us</h2>
+    <p>Sagar Gardenia is a premium dining restaurant known for its exquisite taste, perfect ambiance, and world-class service. Enjoy delicious cuisines prepared with love and freshness.</p>
+</section>
+
+<!-- ====== MENU ====== -->
+<section id="menu" class="menu container">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/300x200/?dosa" alt="Dosa">
+            <h3>Masala Dosa</h3>
+            <p>Classic south Indian favorite.</p>
+            <span>₹120</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+            <h3>Veg Burger</h3>
+            <p>Crisp & juicy delight.</p>
+            <span>₹150</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/300x200/?thali" alt="Thali">
+            <h3>South Indian Thali</h3>
+            <p>Full meal perfect for lunch.</p>
+            <span>₹250</span>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/300x200/?ice-cream" alt="Dessert">
+            <h3>Ice Cream</h3>
+            <p>Sweet finish.</p>
+            <span>₹90</span>
+        </div>
+    </div>
+</section>
+
+<!-- ====== GALLERY ====== -->
+<section id="gallery" class="gallery container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="https://source.unsplash.com/400x300/?restaurant" alt="">
+        <img src="https://source.unsplash.com/400x300/?food" alt="">
+        <img src="https://source.unsplash.com/400x300/?dining" alt="">
+        <img src="https://source.unsplash.com/400x300/?chef" alt="">
+    </div>
+</section>
+
+<!-- ====== RESERVATION ====== -->
+<section id="reserve" class="reserve container">
+    <h2>Book a Table</h2>
+    <form class="reserve-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="date" required>
+        <input type="time" required>
+        <button class="btn">Reserve Now</button>
+    </form>
+</section>
+
+<!-- ====== TESTIMONIALS ====== -->
+<section class="testimonials container">
+    <h2>What People Say</h2>
+    <div class="testimonial-cards">
+        <div class="card">
+            <p>“Amazing food and service! Definitely coming back.”</p>
+            <h4>– Priya</h4>
+        </div>
+        <div class="card">
+            <p>“Delicious meals and great atmosphere.”</p>
+            <h4>– Ravi</h4>
+        </div>
+    </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<footer id="contact" class="footer container">
+    <div class="footer-content">
+        <div>
+            <h3>Contact</h3>
+            <p>Nagarbhavi, Bangalore – Karnataka</p>
+            <p>📞 +91 99999 88888</p>
+            <p>✉️ info@sagargardenia.com</p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <p>Instagram | Facebook | X</p>
+        </div>
+    </div>
+    <p class="footer-end">© 2026 Sagar Gardenia. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>
